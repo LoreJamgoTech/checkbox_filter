@@ -1,0 +1,236 @@
+
+  
+  .div_icon_view i {
+    padding: 10px;
+  }
+  
+  .div_pagination button {
+    width: 20px;
+    /*height: 20px;*/
+    background: #5bc500;
+    border-radius: 50px;
+    /*text-align: center;*/
+    /*justify-self: end;*/
+  }
+  
+  .icon_view_pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .div_hero_search_categorie {
+    position: relative;
+  }
+  
+  .fa.fa-search.icon_search_categorie {
+    position: absolute;
+    align-self: center;
+    right: 5px;
+  }
+  
+  .input_search_categorie {
+    position: relative;
+  }
+  
+  .paragraph_card_product {
+    font-size: 90%;
+    margin-top: -10px;
+    text-align: justify;
+  }
+  
+  .label_categorie {
+    background-color: #f788aa;
+    border-radius: 5px;
+  }
+  
+  .label_availability {
+    color: #53a42d;
+  }
+  
+  .div_labels_options {
+    justify-content: space-between;
+    display: flex;
+    /*background-color: #5bc500;*/
+  }
+  
+  .btn_shopping, .btn_heart {
+    border: 1px;
+    border-style: solid;
+  }
+  
+  .div_btn_products {
+    justify-content: space-evenly;
+    display: flex;
+  }
+  
+  .gallery_cards_product {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  /* details */
+
+  .tittle_prodcut_detail {
+    font-weight: bolder;
+    color: #000000;
+  }
+  
+  .description_product_detail {
+    font-size: medium;
+  }
+  
+  .img-thumbnail {
+    padding: 0.1rem;
+    /*background-color: #9a9a9a;*/
+    /*border: 1px solid #9a9a9a;*/
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .img_product_detail {
+    border-radius: 50px!important;
+  }
+  
+  .div_options_detail {
+    justify-self: self-end;
+    /*display: inline-block;*/
+  }
+  
+  @media (min-width: 768px) {
+    .div_options_detail {
+      justify-self: self-end;
+      /*display: inline-block;*/
+      position: absolute;
+      top: 60%;
+    }
+  }
+  
+  .input_number {
+    width: 20%;
+    border-radius: 10px;
+  }
+  
+  .btn_add_shopping {
+    border-radius: 20px;
+    background-image: linear-gradient( to right,#7db928 , #40a535,#2d6e38 );
+    font-size: small;
+    width: 35%;
+    height: 30px;
+    /*text-align: center;*/
+    /*align-self: center;*/
+    color: #ffffff;
+    /*justify-content: center;*/
+  }
+  
+  .btn_less_plus {
+    width: 5px;
+    /*background-color: #cc2a2a;*/
+    /*left: 30px;*/
+    /*align-self: center;*/
+    /*text-align: left;*/
+  }
+  
+  .la.la-minus-circle {
+    font-size: 25px;
+    align-self: center;
+    text-align: left;
+    margin-left: -11px;
+  }
+  
+  .la.la-plus-circle {
+    font-size: 25px;
+    align-self: center;
+    text-align: left;
+    margin-left: -14px;
+  }
+  
+  .btn_icon_heart {
+    width: 8%;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #000000;
+    /*text-align: center;*/
+    /*align-content: center;*/
+    /*justify-self: center;*/
+  }
+  
+  .fa.fa-heart-o {
+    font-size: 20px;
+  }
+  
+  .label_categorie_detail {
+    width: 20%;
+    background-color: #b5d96f;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+  }
+  
+  .div._card_detail {
+    margin-top: 80px;
+  }
+  
+  .title_product_card {
+    background-color: #fbf6c1;
+    border-radius: 40px;
+    width: 40%;
+    height: 40px;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    /*text-align: center;*/
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    /*border-radius: 40px;*/
+    /*width: 100%;*/
+    /*height: 40px;*/
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 5px;
+  }
+  
+  .div_info_nutritional {
+    width: 40%;
+    height: auto;
+    background-color: #e8e8e8;
+    border-radius: 20px;
+  }
+  
+  .title_information {
+    background-color: #fbf6c1;
+    border-radius: 40px;
+    width: 100%;
+    /*height: 40px;*/
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+  }
+  
+  .paragraph_2 {
+    background-color: #9a9a9a;
+    height: 40px;
+    justify-self: center;
+  }
+  
+  .container_information_detail {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 20px;*/
+  }
+  
+  .container_cards_detail {
+    margin-top: 50px;
+  }
+  
+  .gallery_detail {
+    margin-left: 40px;
+  }
+  
+  
+
+.infobox { margin-top: 15px; }
+.error { color: red; }

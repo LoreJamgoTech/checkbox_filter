@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,800">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <!-- <link rel="stylesheet" href="./css/Masonry-gallery-cards-responsive.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"
@@ -147,9 +154,150 @@
         </div>
       </aside>
       <main>
-        <section>
-          <h2>Products</h2>
-          <div class="products drinks in-stock">
+        <h2>Products</h2>
+        <section class="gallery_cards">
+          <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+              <div class="col-sm-6 col-lg-4 mb-4">
+                <div  class="products frozen in-stock card">
+                  <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
+                  <div class="card-body card_product_1">
+                      <div class="card-title card_title_product">
+                          <div>
+                              <h5>Agano</h5>
+                          </div>
+                          <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                      </div>
+                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                      <div class="div_labels_options">
+                          <div><label class="form-label label_frozen label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                          <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+                      </div>
+                      <div class="div_btn_products"><button class="btn btn_shopping" type="button"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Card</button><button class="btn btn_heart" type="button"><i class="fa fa-heart" aria-hidden="true"></i></button></div>
+                  </div>
+              </div>
+              </div>  
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                <div  class="products drinks in-stock card">
+                  <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
+                  <div class="card-body card_product_1">
+                      <div class="card-title card_title_product">
+                          <div>
+                              <h5>Name product<br></h5>
+                          </div>
+                          <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                      </div>
+                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                      <div class="div_labels_options">
+                          <div><label class="form-label label_categorie">&nbsp; &nbsp;Drinks&nbsp; &nbsp;</label></div>
+                          <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+                      </div>
+                      <div class="div_btn_products"><button class="btn btn_shopping" type="button"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Card</button><button class="btn btn_heart" type="button"><i class="fa fa-heart-o"></i></button></div>
+                  </div>
+              </div>
+              </div>
+
+              
+              <div class="col-sm-6 col-lg-4 mb-4">
+                <div  class="products oils in-stock card">
+                  <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
+                  <div class="card-body card_product_1">
+                      <div class="card-title card_title_product">
+                          <div>
+                              <h5>Atieke frozen<br></h5>
+                          </div>
+                          <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                      </div>
+                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                      <div class="div_labels_options">
+                          <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
+                          <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+                      </div>
+                      <div class="div_btn_products"><button class="btn btn_shopping" type="button"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Card</button><button class="btn btn_heart" type="button"><i class="fa fa-heart-o"></i></button></div>
+                  </div>
+              </div>
+             </div>
+          
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div  class="products frozen in-stock card">
+              <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
+              <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                      <div>
+                          <h5>Banku mix cooled</h5>
+                      </div>
+                      <!-- <div>
+                          <h5>Price</h5>
+                      </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                      <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                      <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Card</button><button class="btn btn_heart" type="button"><i class="fa fa-heart-o"></i></button></div>
+              </div>
+          </div>
+         </div>
+
+         <div class="col-sm-6 col-lg-4 mb-4">
+          <div  class="products frozen in-stock card">
+            <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png" alt="" style="width:100%;object-fit: cover;"></picture>
+            <div class="card-body card_product_1">
+                <div class="card-title card_title_product">
+                    <div>
+                        <h5>Atieke frozen<br></h5>
+                    </div>
+                    <!-- <div>
+                        <h5>Price</h5>
+                    </div> -->
+                </div>
+                <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+                </div>
+                <div class="div_btn_products"><button class="btn btn_shopping" type="button"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Card</button><button class="btn btn_heart" type="button"><i class="fa fa-heart-o"></i></button></div>
+            </div>
+         </div>
+      </div>
+
+      
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div  class="products oils new on-sale card">
+          <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70" alt="" style="width:100%;object-fit: cover;"></picture>
+          <div class="card-body card_product_1">
+              <div class="card-title card_title_product">
+                  <div>
+                      <h5>Shea Butter 300 g</h5>
+                  </div>
+                  <!-- <div>
+                      <h5>Price</h5>
+                  </div> -->
+              </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+              <div class="div_labels_options">
+                  <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils | New | On sale&nbsp; &nbsp;</label></div>
+                  <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Almost out</label></div>
+              </div>
+              <div class="div_btn_products"><button class="btn btn_shopping" type="button"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Card</button><button class="btn btn_heart" type="button"><i class="fa fa-heart-o"></i></button></div>
+          </div>
+       </div>
+    </div>
+
+
+    </div>
+  </section>
+
+          
+          <!-- <div class="products drinks in-stock">
             <img class="imagesfilter" id="images" src="pictures/agano.png">
             <h3>Agano</h3>
             <p>Drinks | In stock</p>
@@ -198,8 +346,7 @@
             <img class="imagesfilter" id="images" src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70">
             <h3>Shea Butter 300 g</h3>
             <p>Oils | New | On sale</p>
-          </div>
-        </section>
+          </div> -->
       </main>
     </div>
     <script type="text/javascript" src="checkbox.js"></script>
