@@ -1,8 +1,8 @@
-/* .filter_gallery{
-  display: grid;
-  grid-template-columns: 0.5fr 2fr;
-  grid-template-rows: 1fr;
-} */
+.filter_gallery{
+  display: block;
+  /* grid-template-columns: 0.5fr 2fr; */
+  /* grid-template-rows: 1fr; */
+} 
 
 
 #transmenu {
@@ -58,6 +58,80 @@
     align-items: start;
   }
 }
+
+/**********************************Toggle******************************/
+#transmenu .navbar-toggler {
+  margin-right: -.75rem;
+  border: none;
+}
+
+#transmenu .navbar-toggler span {
+  position: relative;
+  height: 35px;
+  margin-right: -.75rem;
+  border: none;
+  margin-top: 80px;
+}
+
+#transmenu .navbar-toggler:focus, #transmenu .navbar-toggler:active {
+  outline: 0;
+}
+
+#transmenu .navbar-toggler span {
+  display: block;
+  background-color: #6f6f6e;
+  height: 2px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+#transmenu.transparency .navbar-toggler span {
+  background: black;
+}
+
+#transmenu .navbar-toggler span:nth-child(1), #transmenu .navbar-toggler span:nth-child(3) {
+  -webkit-transition: transform .35s ease-in-out;
+  -moz-transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+}
+
+#transmenu .navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+#transmenu .navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+#transmenu .navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+.nav-search:focus{
+  box-shadow:0 0 0 0!important;
+} 
+
 
 .text_options {
   text-align: left;
@@ -229,4 +303,4 @@ select {
 
 .spices{
   background-color: #FFA333;
-} */
+}
