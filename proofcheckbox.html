@@ -21,10 +21,10 @@
   </head>
   <body>
     <header>
-      <h1>Guinea Refresh</h1>
-    </header>
-    <div class="container">
-      <aside>
+  </header>
+  
+  <div class="container filter_gallery">
+  <!--    <aside>
         <h3>Categories</h3>
         <div>
           <div>
@@ -151,8 +151,57 @@
               id="out-of-stock"
             /><label for="out-of-stock">Out of stock</label>
           </div>
-        </div>
-      </aside>
+        
+      </aside> -->
+      <section class="nav_filter">
+        <nav class="navbar navbar-light navbar-expand-md navbar_filter">
+          <div class="container-fluid container_filter_">
+              <div class="" >
+                  <nav class="navbar navbar-light navbar-expand-lg bg-white transparency border-bottom border-light" id="transmenu">
+                      <div class="container" id="toggle"><button data-bs-toggle="collapse" data-bs-target="#navcol-3" class="navbar-toggler nav-search toogle_icon"><span></span><span></span><span></span></button>
+                          <div class="collapse navbar-collapse" id="navcol-2"></div>
+                     </div>
+                  </nav>
+              </div>
+              <div class="collapse navbar-collapse div_categories_" id="navcol-3">
+               <div>  
+                <div class="search-container div_hero_search_categorie"></div>
+              </div>
+                <div class="hero-search-categories">
+                  <!-- {{range where site.RegularPages "Section" "products"}} -->
+                    <h5 class="text_options">Categories</h5>
+                <!-- }    <p><span>{{.Params.Name | markdownify}}</span></p> -->
+                    <!-- {{ range .Params.Picture }} -->
+                      <!-- <img class="img-fluid w-100" src="{{ .thumbnails.large.url | absURL }}" alt="product-img"> -->
+                    <!-- {{end}} -->
+                  <div class="form-check">
+                    <input class="form-check-input" 
+                      type="checkbox" 
+                      name="categories"
+                      value="frozen"
+                      id="frozen">
+                      <label class="form-check-label" for="frozen">Frozen</label>
+                  </div>
+                  <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="fresh" id="fresh"><label class="form-check-label" for="fresh">Fresh</label></div>
+                  <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="dried" id="dried"><label class="form-check-label" for="dried">Dried</label></div>
+                  <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="fish" id="fish"><label class="form-check-label" for="fish">Fish</label></div>
+                  <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="oils" id="oils"><label class="form-check-label" for="">Oils</label></div>
+                  <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="drinks" id="drinks"><label class="form-check-label" for="drinks">Drinks</label></div>
+                  <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="spices" id="spices"><label class="form-check-label" for="spices">Spices</label></div>
+                  <!-- {{end}} -->
+                  <!-- <div>
+                    <input
+                      type="checkbox"
+                      name="categories"
+                      value="frozen"
+                      id="frozen"
+                    /><label for="frozen">Frozen</label>
+                  </div> -->
+                </div>
+                </div>
+                </div>
+        </nav>
+      </section>
       <main>
         <h2>Products</h2>
         <section class="gallery_cards">
@@ -347,6 +396,7 @@
             <h3>Shea Butter 300 g</h3>
             <p>Oils | New | On sale</p>
           </div> -->
+        </div>
       </main>
     </div>
     <script type="text/javascript" src="checkbox.js"></script>

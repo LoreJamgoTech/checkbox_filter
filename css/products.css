@@ -1,3 +1,10 @@
+/* .filter_gallery{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 1fr;
+} */
+
+
 #transmenu {
   position: relative;
   justify-content: end;
@@ -12,7 +19,8 @@
 }
 
 @media (min-width: 768px) {
-  .div_products_.container_filter_ {
+  .filter_gallery{
+  /* .div_products_.container_filter_ { */
     padding-top: 80px;
     display: grid;
     grid-template-columns: 20% 70%;
@@ -97,7 +105,7 @@ select {
   padding: 20px;
   grid-column: 2;
   grid-row: 2;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 
 .card {
@@ -198,7 +206,7 @@ select {
 .label_frozen{
   background-color:#A5BFDF;
 }
-
+/* 
 .fresh{
   background-color:#B5D96F;
 }
@@ -221,4 +229,4 @@ select {
 
 .spices{
   background-color: #FFA333;
-}
+} */
