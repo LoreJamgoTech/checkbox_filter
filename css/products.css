@@ -23,7 +23,7 @@
   /* .div_products_.container_filter_ { */
     padding-top: 80px;
     display: grid;
-    grid-template-columns: 20% 70%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 5% 90%;
     margin-top: 15%;
     margin: 30px;
@@ -255,10 +255,13 @@ select {
   display: flex;
 }
 
-.btn_shopping, .btn_heart {
+.btn_shopping {
   color:#ffffff;
 }
 
+.btn_heart{
+  color: black;
+}
 .btn_shopping{
   background-image: linear-gradient(rgba(118,183,41,100), rgba(46,114,55,100) );
 }
