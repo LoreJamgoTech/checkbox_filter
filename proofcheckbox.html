@@ -35,7 +35,7 @@
               </div>
                 <div class="hero-search-categories">
                   <!-- {{range where site.RegularPages "Section" "products"}} -->
-                    <h5 class="text_options">Categories</h5>
+                  <h5 class="text_options">Categories</h5>
                 <!-- }    <p><span>{{.Params.Name | markdownify}}</span></p> -->
                     <!-- {{ range .Params.Picture }} -->
                       <!-- <img class="img-fluid w-100" src="{{ .thumbnails.large.url | absURL }}" alt="product-img"> -->
@@ -47,10 +47,17 @@
                   <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="oils" id="oils"><label class="form-check-label" for="">Oils</label></div>
                   <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="drinks" id="drinks"><label class="form-check-label" for="drinks">Drinks</label></div>
                   <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="spices" id="spices"><label class="form-check-label" for="spices">Spices</label></div>
+                  <h5 class="text_options">Tags</h5>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="new" id="new"><label class="form-check-label" for="new">New</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="on-sale" id="on-sale"><label class="form-check-label" for="on-sale">On sale</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="best-seller" id="best-seller"><label class="form-check-label" for="best-seller">Best seller</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="most-love" id="most-love"><label class="form-check-label" for="most-love">Most love</label></div>
+                  <h5 class="text_options">Availability</h5>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="availability" value="in-stock" id="in-stock"><label class="form-check-label" for="in-stock">In stock</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="availability" value="almost-out" id="almost-out"><label class="form-check-label" for="almost-out">Almost out</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="availability" value="out-of-stock" id="out-of-stock"><label class="form-check-label" for="out-of-stock">Out of stock</label></div>
+      </aside>
                   <!-- {{end}} -->
-                </div>
-                </div>
-                </div>
         </nav>
       </section>
       <main>
@@ -60,7 +67,7 @@
         <section class="gallery_cards">
           <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
               <div class="col-sm-6 col-lg-4 mb-4">
-                <div  class="products frozen in-stock card">
+                <div  class="products frozen new in-stock card">
                   <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
                   <div class="card-body card_product_1">
                       <div class="card-title card_title_product">
@@ -74,6 +81,7 @@
                       <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                       <div class="div_labels_options">
                           <div><label class="form-label label_frozen label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                          <div><label class="form-label label_tags">&nbsp;New</label></div>
                           <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
                       </div>
                       <div class="div_btn_products"><button class="btn btn_shopping" type="button">
@@ -92,7 +100,7 @@
               </div>  
 
               <div class="col-sm-6 col-lg-4 mb-4">
-                <div  class="products drinks in-stock card">
+                <div  class="products drinks most-love in-stock card">
                   <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
                   <div class="card-body card_product_1">
                       <div class="card-title card_title_product">
@@ -106,6 +114,7 @@
                       <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                       <div class="div_labels_options">
                           <div><label class="form-label label_categorie">&nbsp; &nbsp;Drinks&nbsp; &nbsp;</label></div>
+                          <div><label class="form-label label_tags">&nbsp;Most love</label></div>
                           <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
                       </div>
                       <div class="div_btn_products"><button class="btn btn_shopping" type="button">
@@ -125,7 +134,7 @@
 
               
               <div class="col-sm-6 col-lg-4 mb-4">
-                <div  class="products oils in-stock card">
+                <div  class="products oils best-seller in-stock card">
                   <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
                   <div class="card-body card_product_1">
                       <div class="card-title card_title_product">
@@ -139,7 +148,8 @@
                       <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                       <div class="div_labels_options">
                           <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
-                          <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+                          <div><label class="form-label label_tags">&nbsp;Best seller</label></div>
+                          <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Out of stock</label></div>
                       </div>
                       <div class="div_btn_products"><button class="btn btn_shopping" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
@@ -158,7 +168,7 @@
           
 
           <div class="col-sm-6 col-lg-4 mb-4">
-            <div  class="products frozen in-stock card">
+            <div  class="products frozen on-sale in-stock card">
               <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
               <div class="card-body card_product_1">
                   <div class="card-title card_title_product">
@@ -172,6 +182,7 @@
                   <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                   <div class="div_labels_options">
                       <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                      <div><label class="form-label label_tags">&nbsp;On sale</label></div>
                       <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
                   </div>
                   <div class="div_btn_products"><button class="btn btn_shopping" type="button">
@@ -190,7 +201,7 @@
          </div>
 
          <div class="col-sm-6 col-lg-4 mb-4">
-          <div  class="products frozen in-stock card">
+          <div  class="products frozen most-love in-stock card">
             <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png" alt="" style="width:100%;object-fit: cover;"></picture>
             <div class="card-body card_product_1">
                 <div class="card-title card_title_product">
@@ -204,7 +215,9 @@
                 <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                 <div class="div_labels_options">
                     <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Most love</label></div>
                     <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In stock</label></div>
+
                 </div>
                 <div class="div_btn_products"><button class="btn btn_shopping" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
@@ -223,7 +236,7 @@
 
       
       <div class="col-sm-6 col-lg-4 mb-4">
-        <div  class="products oils new on-sale card">
+        <div  class="products oils new almost-out card">
           <picture class="picture_img" type="" srcset=""><img class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70" alt="" style="width:100%;object-fit: cover;"></picture>
           <div class="card-body card_product_1">
               <div class="card-title card_title_product">
@@ -236,8 +249,10 @@
               </div>
                   <p class="card-text text-muted paragraph_card_product">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
               <div class="div_labels_options">
-                  <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils | New | On sale&nbsp; &nbsp;</label></div>
+                  <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
+                  <div><label class="form-label label_tags"><i class="fa fa-circle"></i>&nbsp;New</label></div>
                   <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Almost out</label></div>
+                
               </div>
               <div class="div_btn_products"><button class="btn btn_shopping" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
@@ -266,76 +281,7 @@
 
     </div>
   </section>
- <!-- </div>
-        <h3>Tags</h3>
-        <div>
-          <div>
-            <input
-              type="checkbox"
-              name="tags"
-              value="new"
-              id="new"
-            /><label for="new">New</label>
-          </div>
-        </div>
-        <div>
-          <div>
-            <input
-              type="checkbox"
-              name="tags"
-              value="on-sale"
-              id="on-sale"
-            /><label for="on-sale">On sale</label>
-          </div>
-        </div>
-        <div>
-          <div>
-            <input
-              type="checkbox"
-              name="tags"
-              value="best-seller"
-              id="best-seller"
-            /><label for="best-seller">Best seller</label>
-          </div>
-        </div>
-        <div>
-          <div>
-            <input
-              type="checkbox"
-              name="tags"
-              value="most-love"
-              id="most-love"
-            /><label for="most-love">Most love</label>
-          </div>
-        </div>
-        <h3>Availability</h3>
-        <div>
-          <div>
-            <input
-              type="checkbox"
-              name="availability"
-              value="in-stock"
-              id="in-stock"
-            /><label for="in-stock">In stock</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="availability"
-              value="almost-out"
-              id="almost-out"
-            /><label for="almost-out">Almost out</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="availability"
-              value="out-of-stock"
-              id="out-of-stock"
-            /><label for="out-of-stock">Out of stock</label>
-          </div>
-        
-      </aside> -->
+ 
           
           <!-- <div class="products drinks in-stock">
             <img class="imagesfilter" id="images" src="pictures/agano.png">

@@ -3,7 +3,6 @@ $(function() {
     var container = $('#pagination-' + name);
     var sources = function () {
       var result = [];
-
       for (var i = 1; i < 196; i++) {
         result.push(i);
       }
