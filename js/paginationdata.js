@@ -1,12 +1,15 @@
 $(function() {
-  (function(name) {
-    var container = $('#pagination-' + name);
+  // (function(name) {
+    var result = Array.from(document.querySelectorAll('.products'));
+    var container = $('#pagination-demo1');
     var sources = function () {
-      var result = [];
-      for (var i = 1; i < 196; i++) {
+      // var result = [];
+      
+      for (var i = 1; i < result.length; i++) {
+        console.log("result"+result)
         result.push(i);
       }
-
+      console.log("result"+result)
       return result;
     }();
 
@@ -40,31 +43,31 @@ $(function() {
     });
   })('demo1');
 
-  (function(name) {
-    var container = $('#pagination-' + name);
-    container.pagination({
-      dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
-      locator: 'items',
-      totalNumber: 120,
-      pageSize: 20,
-      ajax: {
-        beforeSend: function() {
-          container.prev().html('Loading data from flickr.com ...');
-        }
-      },
-      callback: function(response, pagination) {
-        window.console && console.log(22, response, pagination);
-        var dataHtml = '<ul>';
+  // (function(name) {
+  //   var container = $('#pagination-' + name);
+  //   container.pagination({
+  //     dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
+  //     locator: 'items',
+  //     totalNumber: 120,
+  //     pageSize: 20,
+  //     ajax: {
+  //       beforeSend: function() {
+  //         container.prev().html('Loading data from flickr.com ...');
+  //       }
+  //     },
+  //     callback: function(response, pagination) {
+  //       window.console && console.log(22, response, pagination);
+  //       var dataHtml = '<ul>';
 
-        $.each(response, function (index, item) {
-          dataHtml += '<li>' + item.title + '</li>';
-        });
+  //       $.each(response, function (index, item) {
+  //         dataHtml += '<li>' + item.title + '</li>';
+  //       });
 
-        dataHtml += '</ul>';
+  //       dataHtml += '</ul>';
 
-        container.prev().html(dataHtml);
-      }
-    })
-  })('demo2');
-})
+  //       container.prev().html(dataHtml);
+  //     }
+  //   })
+  // })('demo2');
+// }) 
 
