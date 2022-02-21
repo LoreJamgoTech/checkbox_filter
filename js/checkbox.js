@@ -36,6 +36,7 @@ function setVisibility() {
     var tags = checked.tags.length ? _.intersection(Array.from(el.classList), checked.tags).length : true;
     var availability = checked.availability.length ? _.intersection(Array.from(el.classList), checked.availability).length : true;
     if (categories && tags && availability) {
+      el
       el.style.display = 'flex';
     } else {
       el.style.display = 'none';
