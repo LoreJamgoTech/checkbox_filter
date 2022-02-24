@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <script src="jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="path_to/jquery.js"></script>
-    <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
-    <link type="text/css" rel="stylesheet" href="path_to/simplePagination.css"/> -->
+  <script src="jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="path_to/jquery.js"></script>
+  <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/products.css">
   <link href="./css/pagination1.css" rel="stylesheet" type="text/css">
@@ -23,22 +22,20 @@
 </head>
 
 <body>
-  <header>
-  </header>
 
   <div class="container filter_gallery">
     <section class="nav_filter">
       <nav class="navbar navbar-light navbar-expand-md navbar_filter">
         <div class="container-fluid container_filter_">
-          <div class="">
-            <nav class="navbar navbar-light navbar-expand-lg bg-white transparency border-bottom border-light"
-              id="transmenu">
-              <div class="container" id="toggle"><button data-bs-toggle="collapse" data-bs-target="#navcol-3"
-                  class="navbar-toggler nav-search toogle_icon"><span></span><span></span><span></span></button>
-                <div class="collapse navbar-collapse" id="navcol-2"></div>
-              </div>
-            </nav>
-          </div>
+          <!-- <div class=""> -->
+          <nav class="navbar navbar-light navbar-expand-lg bg-white transparency border-bottom border-light"
+            id="transmenu">
+            <div class="container" id="toggle"><button data-bs-toggle="collapse" data-bs-target="#navcol-3"
+                class="navbar-toggler nav-search toogle_icon"><span></span><span></span><span></span></button>
+              <div class="collapse navbar-collapse" id="navcol-2"></div>
+            </div>
+          </nav>
+          <!-- </div> -->
           <div class="collapse navbar-collapse div_categories_" id="navcol-3">
             <div>
               <div class="search-container div_hero_search_categorie"></div>
@@ -86,612 +83,542 @@
               <!-- {{end}} -->
       </nav>
     </section>
+
     <main>
-      <div>
-          <div class="container-2">
-            <section class="gallery_cards">
-              <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products frozen new in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
-                        style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Agano</h5>
-                        </div>
-                        <!-- <div>
+       <section class="gallery_card">
+        <div class="container-2">
+          <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products frozen new in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
+                    style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Agano</h5>
+                    </div>
+                    <!-- <div>
                               <h5>Price</h5>
                           </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_frozen label_categorie">&nbsp; &nbsp;Frozen&nbsp;
-                            &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;New</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_frozen label_categorie">&nbsp; &nbsp;Frozen&nbsp;
+                        &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;New</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products drinks most-love in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
-                        style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Name product<br></h5>
-                        </div>
-                        <!-- <div>
-                              <h5>Price</h5>
-                          </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Drinks&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;Most love</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products oils best-seller in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Atieke frozen<br></h5>
-                        </div>
-                        <!-- <div>
-                              <h5>Price</h5>
-                          </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;Best seller</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Out of
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products frozen on-sale in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg"
-                        alt="" style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Banku mix cooled</h5>
-                        </div>
-                        <!-- <div>
-                          <h5>Price</h5>
-                      </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;On sale</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products frozen most-love in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png" alt=""
-                        style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Atieke frozen<br></h5>
-                        </div>
-                        <!-- <div>
-                        <h5>Price</h5>
-                    </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;Most love</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products oils new almost-out card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70"
-                        alt="" style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Shea Butter 300 g</h5>
-                        </div>
-                        <!-- <div>
-                      <h5>Price</h5>
-                  </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags"><i class="fa fa-circle"></i>&nbsp;New</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Almost
-                            out</label></div>
-
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products frozen new in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
-                        style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Agano</h5>
-                        </div>
-                        <!-- <div>
-                              <h5>Price</h5>
-                          </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_frozen label_categorie">&nbsp; &nbsp;Frozen&nbsp;
-                            &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;New</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products drinks most-love in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
-                        style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Name product<br></h5>
-                        </div>
-                        <!-- <div>
-                              <h5>Price</h5>
-                          </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Drinks&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;Most love</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products oils best-seller in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="pictures/img_card.jpeg" alt="" style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Atieke frozen<br></h5>
-                        </div>
-                        <!-- <div>
-                              <h5>Price</h5>
-                          </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;Best seller</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Out of
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products frozen on-sale in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg"
-                        alt="" style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Banku mix cooled</h5>
-                        </div>
-                        <!-- <div>
-                          <h5>Price</h5>
-                      </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;On sale</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products frozen most-love in-stock card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png" alt=""
-                        style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Atieke frozen<br></h5>
-                        </div>
-                        <!-- <div>
-                        <h5>Price</h5>
-                    </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags">&nbsp;Most love</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
-                            stock</label></div>
-
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                  <div class="products oils new almost-out card">
-                    <picture class="picture_img" type="" srcset=""><img
-                        class=" imagesfilter card-img-top p-3 img_card_products" id="images"
-                        src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70"
-                        alt="" style="width:100%;object-fit: cover;"></picture>
-                    <div class="card-body card_product_1">
-                      <div class="card-title card_title_product">
-                        <div>
-                          <h5>Shea Butter 300 g</h5>
-                        </div>
-                        <!-- <div>
-                      <h5>Price</h5>
-                  </div> -->
-                      </div>
-                      <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
-                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                        humour, or randomised words which don't look even slightly believable.</p>
-                      <div class="div_labels_options">
-                        <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
-                        <div><label class="form-label label_tags"><i class="fa fa-circle"></i>&nbsp;New</label></div>
-                        <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Almost
-                            out</label></div>
-
-                      </div>
-                      <div class="div_btn_products"><button class="btn btn_shopping" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                            <path
-                              d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                          </svg>
-                          &nbsp;Add to Card</button>
-                        <button class="btn btn_heart" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-suit-heart" viewBox="0 0 16 16">
-                            <path
-                              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
               </div>
-              <!-- Pagination -->
-              <br>
-              <div id="pagination-container"></div>
-              <br>
-              <!-- 
-<div id="wrapper">
-  <section>
-      <div class="data-container">data-containe</div>
-      <div id="pagination-demo1">Prueba pagination demo</div>
-      <div class="data-container">data-container</div>
-      <div id="pagination-demo2">pagination-demo2</div>
-  </section>
-</div> -->
+            </div>
 
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products drinks most-love in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
+                    style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Name product<br></h5>
+                    </div>
+                    <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Drinks&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Most love</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products oils best-seller in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="pictures/img_card.jpeg"
+                    alt="" style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Atieke frozen<br></h5>
+                    </div>
+                    <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Best seller</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Out of
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products frozen on-sale in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images"
+                    src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg"
+                    alt="" style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Banku mix cooled</h5>
+                    </div>
+                    <!-- <div>
+                          <h5>Price</h5>
+                      </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;On sale</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products frozen most-love in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images"
+                    src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png" alt=""
+                    style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Atieke frozen<br></h5>
+                    </div>
+                    <!-- <div>
+                        <h5>Price</h5>
+                    </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Most love</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
 
-        <!-- <div class="products drinks in-stock">
-            <img class="imagesfilter" id="images" src="pictures/agano.png">
-            <h3>Agano</h3>
-            <p>Drinks | In stock</p>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products oils new almost-out card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images"
+                    src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70"
+                    alt="" style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Shea Butter 300 g</h5>
+                    </div>
+                    <!-- <div>
+                      <h5>Price</h5>
+                  </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags"><i class="fa fa-circle"></i>&nbsp;New</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Almost
+                        out</label></div>
+
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products frozen new in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
+                    style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Agano</h5>
+                    </div>
+                    <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_frozen label_categorie">&nbsp; &nbsp;Frozen&nbsp;
+                        &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;New</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products drinks most-love in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" src="pictures/img_card.jpeg" alt=""
+                    style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Name product<br></h5>
+                    </div>
+                    <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Drinks&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Most love</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products oils best-seller in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images" src="pictures/img_card.jpeg"
+                    alt="" style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Atieke frozen<br></h5>
+                    </div>
+                    <!-- <div>
+                              <h5>Price</h5>
+                          </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Best seller</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Out of
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products frozen on-sale in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images"
+                    src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg"
+                    alt="" style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Banku mix cooled</h5>
+                    </div>
+                    <!-- <div>
+                          <h5>Price</h5>
+                      </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;On sale</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products frozen most-love in-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images"
+                    src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png" alt=""
+                    style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Atieke frozen<br></h5>
+                    </div>
+                    <!-- <div>
+                        <h5>Price</h5>
+                    </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Frozen&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags">&nbsp;Most love</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;In
+                        stock</label></div>
+
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="products oils on-sale out-of-stock card">
+                <picture class="picture_img" type="" srcset=""><img
+                    class=" imagesfilter card-img-top p-3 img_card_products" id="images"
+                    src="https://dl.airtable.com/.attachmentThumbnails/58e669a833bf71176bb472bc9bb2ce8b/3a9558aa"
+                    alt="" style="width:100%;object-fit: cover;"></picture>
+                <div class="card-body card_product_1">
+                  <div class="card-title card_title_product">
+                    <div>
+                      <h5>Palm Oil 5 L</h5>
+                    </div>
+                    <!-- <div>
+                      <h5>Price</h5>
+                  </div> -->
+                  </div>
+                  <p class="card-text text-muted paragraph_card_product">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly believable.</p>
+                  <div class="div_labels_options">
+                    <div><label class="form-label label_categorie">&nbsp; &nbsp;Oils&nbsp; &nbsp;</label></div>
+                    <div><label class="form-label label_tags"><i class="fa fa-circle"></i>&nbsp;On sale</label></div>
+                    <div><label class="form-label label_availability"><i class="fa fa-circle"></i>&nbsp;Out of stock
+                        out</label></div>
+
+                  </div>
+                  <div class="div_btn_products"><button class="btn btn_shopping" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                      </svg>
+                      &nbsp;Add to Card</button>
+                    <button class="btn btn_heart" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="products frozen in-stock">
-            <img class="imagesfilter" id="images" src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png">
-            <h3>Atieke frozen</h3>
-            <p>Frozen | In stock</p>
-          </div>
-          <div class="products frozen in-stock">
-            <img class="imagesfilter" id="images" src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg">
-            <h3>Banku mix cooled</h3>
-            <p>Frozen | In stock</p>
-          </div>
-          <div class="products frozen spices almost-out">
-            <img class="imagesfilter" id="images" src="https://vinleaf.com/wp-content/uploads/2019/03/frozen-cassava-leaves-20190325.jpg">
-            <h3>Cassava leaves frozen 1 pcs</h3>
-            <p>Frozen | Spices | Almost out</p>
-          </div>
-          <div class="products oils most-love">
-            <img class="imagesfilter" id="images" src="https://dl.airtable.com/.attachmentThumbnails/7b8a8dbaf8e0437fa1601f5cf7c35390/851605cc">
-            <h3>Palm Oil 0.5 L</h3>
-            <p>Oils | Most Love</p>
-          </div>
-          <div class="products oils most-love">
-            <img class="imagesfilter" id="images" src="https://dl.airtable.com/.attachmentThumbnails/7d13a7d5eddae7d864e28753ac27713f/13b05de2">
-            <h3>Palm Oil 1 L</h3>
-            <p>Oils | Most Love</p>
-          </div>
-          <div class="products oils best-seller">
-            <img class="imagesfilter" id="images" src="https://dl.airtable.com/.attachmentThumbnails/ca5a4bf0f4bc22fcb5aad2c60cc651fd/1f2444ee">
-            <h3>Palm Oil 3 L</h3>
-            <p>Oils | best-seller</p>
-          </div>
-          <div class="products oils out-of-stock">
-            <img class="imagesfilter" id="images" src="https://dl.airtable.com/.attachmentThumbnails/c28ff255428493aeed4d69df8ed726c4/988418cb">
-            <h3>Palm Oil 4.5 L</h3>
-            <p>Oils | Out of stock</p>
-          </div>
-          <div class="products oils out-of-stock">
-            <img class="imagesfilter" id="images" src="https://dl.airtable.com/.attachmentThumbnails/58e669a833bf71176bb472bc9bb2ce8b/3a9558aa">
-            <h3>Palm Oil 5 L</h3>
-            <p>Oils | Out of stock</p>
-          </div>
-          <div class="products oils new on-sale">
-            <img class="imagesfilter" id="images" src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70">
-            <h3>Shea Butter 300 g</h3>
-            <p>Oils | New | On sale</p>
-          </div> -->
+          <!-- Pagination -->
+          <br>
+          <div id="pagination-container"></div>
+          <br>
       </div>
-    </main>
+      </section>
+     </main>
+         
   </div>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="./js/checkbox.js"></script>
   <script type="text/javascript" src="./js/bootstrap.js"></script>
-  <script type="text/javascript" src="./js/pagination1.js"></script>
-  <!-- <script type="text/javascript" src="pagination.js"></script> -->
+  <!-- <script type="text/javascript" src="./js/pagination1.js"></script> -->
+  <!-- <script type="text/javascript" src="./js/pagination.js"></script> -->
+  <!-- <script type="text/javascript" src="./js/paginationdata.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
   <script>
     var items = $(".container-2 .products");

@@ -1,17 +1,17 @@
 $(function() {
   // (function(name) {
-    var result = Array.from(document.querySelectorAll('.products'));
+    var dataproducts = Array.from(document.querySelectorAll('.products'));
     var container = $('#pagination-demo1');
     var sources = function () {
-      // var result = [];
-      
-      for (var i = 1; i < result.length; i++) {
-        console.log("result"+result)
-        result.push(i);
-      }
-      console.log("result"+result)
-      return result;
-    }();
+    var result={};
+    
+          for (var i = 0; i < 196; i++) {
+            result.push([i]);
+          }
+         
+          return result;
+        };
+    console.log("data products",dataproducts)
 
     var options = {
       dataSource: sources,
@@ -30,7 +30,7 @@ $(function() {
       }
     };
 
-    //$.pagination(container, options);
+    $.pagination(container, options);
 
     container.addHook('beforeInit', function () {
       window.console && console.log('beforeInit...');
@@ -39,9 +39,10 @@ $(function() {
 
     container.addHook('beforePageOnClick', function () {
       window.console && console.log('beforePageOnClick...');
-      //return false
+      return false
     });
-  })('demo1');
+  });("demo1")
+
 
   // (function(name) {
   //   var container = $('#pagination-' + name);
