@@ -33,51 +33,89 @@ let data=[{
 $(function() {
   (function(name) {
     var array=data
+    const container_cards=document.getElementById("container_cards")
     // var array = Array.from(document.querySelectorAll('.products'));
     var container = $('#pagination-' + name);
+    // container_cards.innerHTML="";
     var sources = function () {
-      var result = [];
-      for (var i = 0; i < array.length; i++) {
-        var product_name= array[i].product_name;
-        var image= array[i].categorie;        
-        var categorie= array[i].categorie;
-        var tags= array[i].tags;
-        var availability= array[i].tags;
+    var result = [];
+    for (var i = 0; i < array.length; i++) {
+       const new_div=document.createElement("div");
+       const new_product=document.createElement("h1");
+       const new_img=document.createElement("img");
+       const new_tag=document.createElement("h2");
+       const new_categorie=document.createElement("h2");
+       const new_availability=document.createElement("h2")
+       new_div.className="products card";
+       new_product.className="name_product";
+       new_img.className="picture_img";
+       new_categorie.className="label_categorie";
+       new_tag.className="label_tags";
+       new_availability.className="label_availability";
+       let nombre=new_product.innerHTML=array[i].product_name;
+       let tag=new_tag.innerHTML=array[i].tags;
+       let categorie=new_categorie.innerHTML=array[i].categorie;
+       let availability=new_availability.innerHTML=array[i].availability;
+       let img=new_img.src=array[i].image;
+       container_cards.appendChild(new_div);
+       new_div.appendChild(new_product);
+       new_div.appendChild(new_tag);
+       new_div.appendChild(new_img);
+       new_div.appendChild(new_categorie);
+       new_div.appendChild(new_availability);
+       console.log("recorriendo array",array);
+       console.log("nombre",nombre);
+       console.log("nombre",nombre);
+       result.push(nombre,tag,categorie,availability,img);
+    }
 
-        result.push(array[i]);
-      }
-      console.log("array",result)
-      console.log("recorriendo",product_name,categorie,tags,availability,image)
-      // console.log("data",array[i])
-      return result;
+    // var sources = function () {
+    //   var result = [];
+    //   for (var i = 0; i < array.length; i++) {
+    //     var product_name= array[i].product_name;
+    //     var image= array[i].categorie;        
+    //     var categorie= array[i].categorie;
+    //     var tags= array[i].tags;
+    //     var availability= array[i].tags;
+
+    //     // result.push(array[i]);
+    //   }
+    //   console.log("array",result)
+    //   console.log("recorriendo",product_name,categorie,tags,availability,image)
+    //   // console.log("data",array[i])
+    //   return result;
 
       // for (var i = 1; i < 196; i++) {
       //   result.push(i);
       // }
 
-      // return result;
+      return result;
+  
     }();
+  // });('demo1');
+
+
    
 
-    var options = {
-      dataSource: sources,
-         callback: function (response, pagination) {
-        window.console && console.log(response, pagination);
+    // var options = {
+    //   dataSource: sources,
+    //      callback: function (response, pagination) {
+    //     window.console && console.log(response, pagination);
 
-        var dataHtml = '<ul>';
+    //     var dataHtml = '<ul>';
         
-          $.each(response, function (index, item) {
-          console.log("item",item)
-          dataHtml += '<li>'+item.product_name +" "+ item.categorie+" "
+    //       $.each(response, function (index, item) {
+    //       console.log("item",item)
+    //       dataHtml += '<li>'+item 
     
-          '</li>';
-        });
+    //       '</li>';
+    //     });
 
-        dataHtml += '</ul>';
+    //     dataHtml += '</ul>';
 
-        container.prev().html(dataHtml);
-      }
-    };
+    //     container.prev().html(dataHtml);
+    //   }
+    // };
 
     //$.pagination(container, options);
 
