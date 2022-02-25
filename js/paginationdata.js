@@ -1,15 +1,23 @@
+
 $(function() {
   (function(name) {
+    var array = Array.from(document.querySelectorAll('.products'));
     var container = $('#pagination-' + name);
     var sources = function () {
       var result = [];
-
-      for (var i = 1; i < 196; i++) {
-        result.push(i);
+      for (var i = 0; i < array.length; i++) {
+        result.push(array[i]);
       }
-
+      console.log("array",result)
       return result;
+
+      // for (var i = 1; i < 196; i++) {
+      //   result.push(i);
+      // }
+
+      // return result;
     }();
+   
 
     var options = {
       dataSource: sources,
@@ -19,7 +27,7 @@ $(function() {
         var dataHtml = '<ul>';
 
         $.each(response, function (index, item) {
-          dataHtml += '<li>' + item + '</li>';
+          dataHtml += '<li>'+item + '</li>';
         });
 
         dataHtml += '</ul>';
