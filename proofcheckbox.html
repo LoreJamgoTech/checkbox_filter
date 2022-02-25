@@ -14,13 +14,76 @@
 </head>
 
 <body>
-  <br>
-<div id="container_cards"></div>
+  <section class="nav_filter">
+    <nav class="navbar navbar-light navbar-expand-md navbar_filter">
+      <div class="container-fluid container_filter_">
+        <!-- <div class=""> -->
+        <nav class="navbar navbar-light navbar-expand-lg bg-white transparency border-bottom border-light"
+          id="transmenu">
+          <div class="container" id="toggle"><button data-bs-toggle="collapse" data-bs-target="#navcol-3"
+              class="navbar-toggler nav-search toogle_icon"><span></span><span></span><span></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2"></div>
+          </div>
+        </nav>
+        <!-- </div> -->
+        <div class="collapse navbar-collapse div_categories_" id="navcol-3">
+          <div>
+            <div class="search-container div_hero_search_categorie"></div>
+          </div>
+          <div class="hero-search-categories">
+            <!-- {{range where site.RegularPages "Section" "products"}} -->
+            <h5 class="text_options">Categories</h5>
+            <!-- }    <p><span>{{.Params.Name | markdownify}}</span></p> -->
+            <!-- {{ range .Params.Picture }} -->
+            <!-- <img class="img-fluid w-100" src="{{ .thumbnails.large.url | absURL }}" alt="product-img"> -->
+            <!-- {{end}} -->
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="frozen"
+                id="frozen"> <label class="form-check-label" for="frozen">Frozen</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="fresh"
+                id="fresh"><label class="form-check-label" for="fresh">Fresh</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="dried"
+                id="dried"><label class="form-check-label" for="dried">Dried</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="fish"
+                id="fish"><label class="form-check-label" for="fish">Fish</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="oils"
+                id="oils"><label class="form-check-label" for="">Oils</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="drinks"
+                id="drinks"><label class="form-check-label" for="drinks">Drinks</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="categories" value="spices"
+                id="spices"><label class="form-check-label" for="spices">Spices</label></div>
+            <h5 class="text_options">Tags</h5>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="new"
+                id="new"><label class="form-check-label" for="new">New</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="on-sale"
+                id="on-sale"><label class="form-check-label" for="on-sale">On sale</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="best-seller"
+                id="best-seller"><label class="form-check-label" for="best-seller">Best seller</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="tags" value="most-love"
+                id="most-love"><label class="form-check-label" for="most-love">Most love</label></div>
+            <h5 class="text_options">Availability</h5>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="availability"
+                value="in-stock" id="in-stock"><label class="form-check-label" for="in-stock">In stock</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="availability"
+                value="almost-out" id="almost-out"><label class="form-check-label" for="almost-out">Almost out</label>
+            </div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" name="availability"
+                value="out-of-stock" id="out-of-stock"><label class="form-check-label" for="out-of-stock">Out of
+                stock</label></div>
+            </aside>
+            <!-- {{end}} -->
+    </nav>
+  </section>
+
+<div id=" container_cards">
+  <div id="new_div"></li>
+
+</div>
   <!-- <div class="data-container"></div> -->
   <div id="pagination-demo1"></div>
+  <div id="filtro"></div>
   <!-- <div class="data-container1"></div>
   <div id="pagination-demo2"></div> -->
-  <br>
+
 
   <script type="text/javascript" src="./js/checkbox.js"></script>
   <script type="text/javascript" src="./js/bootstrap.js"></script>
