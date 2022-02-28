@@ -1,10 +1,13 @@
 var options = {
-  valueNames: ["name", "born", "address", { data: ["gender"] }],
+  valueNames: ["imagesfilter", "name", "born", "address", { data: ["gender"] }],
   page: 3,
   pagination: true,
 };
+console.log("options", options);
 var userList = new List("users", options);
+console.log(userList);
 
+//clear button
 function resetList() {
   userList.search();
   userList.filter();
@@ -12,7 +15,7 @@ function resetList() {
   $(".filter-all").prop("checked", true);
   $(".filter").prop("checked", false);
   $(".search").val("");
-  //console.log('Reset Successfully!');
+  console.log('Reset Successfully!');
 }
 
 function updateList() {
@@ -37,7 +40,7 @@ function updateList() {
     return addressFilter && genderFilter;
   });
   userList.update();
-  //console.log('Filtered: ' + values_gender);
+  console.log('Filtered: ' + values_gender);
 }
 
 $(function () {

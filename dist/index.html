@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>
-      CodePen - List.js with Multiple Filters, Search, and Pagination
-    </title>
+    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -30,6 +28,7 @@
               />
             </div>
             <div class="form-group col-xs-12 col-sm-12 col-md-4">
+              <h3>Categories</h3>
               <div class="radio-inline">
                 <label>
                   <input
@@ -48,11 +47,11 @@
                   <input
                     class="filter"
                     type="radio"
-                    value="female"
+                    value="frozen"
                     name="gender"
-                    id="gender-female"
+                    id="gender-frozen"
                   />
-                  Female
+                  Frozen
                 </label>
               </div>
               <div class="radio-inline">
@@ -60,49 +59,62 @@
                   <input
                     class="filter"
                     type="radio"
-                    value="male"
+                    value="oils"
+                    name="gender"
+                    id="gender-oils"
+                  />
+                  Oils
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input
+                    class="filter"
+                    type="radio"
+                    value="Drinks"
                     name="gender"
                     id="gender-male"
                   />
-                  Male
+                  Drinks
                 </label>
               </div>
             </div>
             <div class="form-group col-xs-12 col-sm-12 col-md-4">
+              <h3>Availability</h3>
               <div class="radio-inline">
                 <label>
                   <input
                     class="filter"
                     type="radio"
-                    value="Blvd"
-                    name="address"
-                    id="address-all"
-                  />
-                  Boulevard
-                </label>
-              </div>
-              <div class="radio-inline">
-                <label>
-                  <input
-                    class="filter"
-                    type="radio"
-                    value="St"
-                    name="address"
-                    id="address-street"
-                  />
-                  Street
-                </label>
-              </div>
-              <div class="radio-inline">
-                <label>
-                  <input
-                    class="filter"
-                    type="radio"
-                    value="Dr"
+                    value="In stock"
                     name="address"
                     id="address-drive"
                   />
-                  Drive
+                  In Stock
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input
+                    class="filter"
+                    type="radio"
+                    value="Almost out"
+                    name="address"
+                    id="address-drive"
+                  />
+                  Almost out
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input
+                    class="filter"
+                    type="radio"
+                    value="Out of stock"
+                    name="address"
+                    id="address-drive"
+                  />
+                  Out of stock
                 </label>
               </div>
             </div>
@@ -113,35 +125,95 @@
             </div>
           </div>
           <ul class="list">
-            <li class="list--list-item" data-gender="male">
-              <h3 class="name">Jonny Wayne</h3>
-              <p class="born">1986</p>
-              <p class="address">13 Oak St.</p>
+            <li class="list--list-item" data-gender="Drinks">
+              <img
+                class="imagesfilter"
+                src="https://okdiario.com/img/2018/01/25/cafe-655x368.jpg"
+              />
+              <h3 class="name">Agano</h3>
+              <p class="born">Drinks</p>
+              <p class="address">In stock</p>
+            </li>
+            <li class="list--list-item" data-gender="frozen">
+              <img
+                class="imagesfilter"
+                src="https://zippgrocery.com/wp-content/uploads/2020/06/NINA-Frozen-Attieke.png"
+              />
+              <h3 class="name">Atieke frozen</h3>
+              <p class="born">Frozen</p>
+              <p class="address">Out of stock</p>
             </li>
             <li class="list--list-item" data-gender="male">
-              <h3 class="name">Jonas</h3>
-              <p class="born">1985</p>
-              <p class="address">3 Main N Ave.</p>
-            </li>
-            <li class="list--list-item" data-gender="male">
-              <h3 class="name">Jonas</h3>
+              <img
+                class="imagesfilter"
+                src="https://i5.walmartimages.com/asr/1a6e2ad6-7866-422d-81bc-52ad39a13a91.c632c773df47dbeb5298906738093cf4.jpeg"
+              />
+              <h3 class="name">Banku mix cooled</h3>
               <p class="born">1985</p>
               <p class="address">123 Main St.</p>
             </li>
             <li class="list--list-item" data-gender="male">
-              <h3 class="name">Jonas</h3>
+              <img
+                class="imagesfilter"
+                src="https://vinleaf.com/wp-content/uploads/2019/03/frozen-cassava-leaves-20190325.jpg"
+              />
+              <h3 class="name">Cassava leaves frozen 1 pcs</h3>
               <p class="born">1985</p>
               <p class="address">953 Lake Square</p>
             </li>
-            <li class="list--list-item" data-gender="female">
-              <h3 class="name">Martina</h3>
-              <p class="born">1986</p>
-              <p class="address">1313 Deadend Dr.</p>
+            <li class="list--list-item" data-gender="oils">
+              <img
+                class="imagesfilter"
+                src="https://dl.airtable.com/.attachmentThumbnails/7b8a8dbaf8e0437fa1601f5cf7c35390/851605cc"
+              />
+              <h3 class="name">Palm Oil 0.5 L</h3>
+              <p class="born">oils</p>
+              <p class="address">In stock</p>
             </li>
-            <li class="list--list-item" data-gender="male">
-              <h3 class="name">Gustaf</h3>
-              <p class="born">1983</p>
+            <li class="list--list-item" data-gender="oils">
+              <img
+                class="imagesfilter"
+                src="https://dl.airtable.com/.attachmentThumbnails/7d13a7d5eddae7d864e28753ac27713f/13b05de2"
+              />
+              <h3 class="name">Palm Oil 1 L</h3>
+              <p class="born">oils</p>
               <p class="address">24 Busch Blvd.</p>
+            </li>
+            <li class="list--list-item" data-gender="oils">
+              <img
+                class="imagesfilter"
+                src="https://dl.airtable.com/.attachmentThumbnails/ca5a4bf0f4bc22fcb5aad2c60cc651fd/1f2444ee"
+              />
+              <h3 class="name">Palm Oil 3 L</h3>
+              <p class="born">oils</p>
+              <p class="address">24 Busch Blvd.</p>
+            </li>
+            <li class="list--list-item" data-gender="oils">
+              <img
+                class="imagesfilter"
+                src="https://dl.airtable.com/.attachmentThumbnails/c28ff255428493aeed4d69df8ed726c4/988418cb"
+              />
+              <h3 class="name">Palm Oil 4.5 L</h3>
+              <p class="born">oils</p>
+              <p class="address">24 Busch Blvd.</p>
+            </li>
+            <li class="list--list-item" data-gender="oils">
+              <img
+                class="imagesfilter"
+                src="https://dl.airtable.com/.attachmentThumbnails/58e669a833bf71176bb472bc9bb2ce8b/3a9558aa"
+              />
+              <h3 class="name">Palm Oil 5 L</h3>
+              <p class="born">oils</p>
+              <p class="address">24 Busch Blvd.</p>
+            </li>
+            <li class="list--list-item" data-gender="oils">
+              <img
+                class="imagesfilter"
+                src="https://rukminim1.flixcart.com/image/416/416/khf63680/soap/c/b/e/1-150-100-pure-shea-butter-raw-unrefined-150gm-great-for-face-original-imafxfuhkcqfq3b5.jpeg?q=70"
+              />
+              <h3 class="name">Shea Butter 300 g</h3>
+              <p class="born">oils</p>
+              <p class="address">Almost out</p>
             </li>
           </ul>
           <div class="no-result">No Results</div>

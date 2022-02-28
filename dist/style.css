@@ -22,3 +22,10 @@
 .no-result {
   display: none;
 }
+.imagesfilter {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+}
