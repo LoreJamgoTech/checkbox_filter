@@ -28,11 +28,11 @@ Array.prototype.forEach.call(allCheckboxes, function (el) {
 
 function toggleCheckbox(e) {
   productsFiltered = [...allProducts].filter(p => p?.className.includes(e.target.value));
+  items = $(productsFiltered);
   if (productsFiltered) {
     items = $(productsFiltered);
     console.log("entro a aqui", items);
     numItems = items.length;
-    items.slice(perPage).hide();
   }
   console.log(numItems);
 
