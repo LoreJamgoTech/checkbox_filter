@@ -95,30 +95,40 @@ $(function () {
       return result;
     })();
     // });('demo1');
-    function print(name_product, tag, categorie, availability, img) {
-      const new_column = document.createElement("div");
-      const new_card = document.createElement("div");
-      const new_product = document.createElement("h1");
-      const new_img = document.createElement("img");
-      const new_tag = document.createElement("h2");
-      const new_categorie = document.createElement("h2");
-      const new_availability = document.createElement("h2");
-      new_column.className = "col-sm-6 col-lg-4 mb-4";
-      new_card.className = "products card";
-      new_product.className = "name_product";
-      new_img.className = "picture_img";
-      new_categorie.className = "label_categorie";
-      new_tag.className = "label_tags";
-      new_availability.className = "label_availability";
-      container_cards.appendChild(new_column);
-      new_column.appendChild(new_card);
-      new_card.appendChild(new_product);
-      new_card.appendChild(new_tag);
-      new_card.appendChild(new_img);
-      new_card.appendChild(new_categorie);
-      new_card.appendChild(new_availability);
-      console.log("print", name_product, tag, categorie, availability, img);
-    }
+    // function print(name_product, tag, categorie, availability, img) {
+    //   const new_column = document.createElement("div");
+    //   const new_product = document.createElement("div");
+    //   const card_body=document.createElement("div")
+    //   const card_picture=document.createElement("picture")
+    //   const new_product = document.createElement("h1");
+    //   const new_img = document.createElement("img");
+    //   const new_tag = document.createElement("h2");
+    //   const new_categorie = document.createElement("h2");
+    //   const new_availability = document.createElement("h2");
+    //   new_column.className = "col-sm-6 col-lg-4 mb-4";
+    //   new_product.className = "products card";
+    //   new_product.className = "name_product";
+    //   card_picture.className="picture_img";
+    //   new_img.className = "imagesfilter card-img-top p-3 img_card_products";
+    //   new_categorie.className = "label_categorie";
+    //   new_tag.className = "label_tags";
+    //   new_availability.className = "label_availability";
+    //   new_product.innerHTML =name_product;
+    //   new_tag.innerHTML = tag;
+    //   new_categorie.innerHTML = categorie;
+    //   new_availability.innerHTML = availability;
+    //   new_img.src = img;
+    //   container_cards.appendChild(new_column);
+    //   new_column.appendChild(new_product);
+    //   new_product.appendChild(card_body);
+    //   new_product.appendChild(card_picture);
+    //   card_picture.appendChild(new_img)
+    //   card_body.appendChild(new_product);
+    //   card_body.appendChild(new_tag);
+    //   card_body.appendChild(new_categorie);
+    //   card_body.appendChild(new_availability);
+      // console.log("print", name_product, tag, categorie, availability, img);
+    // }
 
     var options = {
       dataSource: sources,
@@ -126,39 +136,45 @@ $(function () {
         window.console && console.log("response", response, pagination);
         container_cards.innerHTML = "";
         for (var i = 0; i < response.length; i++) {
-          let name_product = response[i].product_name;
+          let nameproduct = response[i].product_name;
           let tag = response[i].tags;
           let categorie = response[i].categorie;
           let availability = response[i].availability;
           let img = response[i].image;
           const new_column = document.createElement("div");
-          const new_card = document.createElement("div");
-          const new_product = document.createElement("h1");
+          const new_product = document.createElement("div");
+          const card_picture=document.createElement("picture")
+          const card_body=document.createElement("div")
+          const name_product = document.createElement("h5");
           const new_img = document.createElement("img");
           const new_tag = document.createElement("h2");
           const new_categorie = document.createElement("h2");
           const new_availability = document.createElement("h2");
           new_column.className = "col-sm-6 col-lg-4 mb-4";
-          new_card.className = "products card";
-          new_product.className = "name_product";
-          new_img.className = "picture_img";
+          new_product.className = "products card";
+          card_picture.className="picture_img";
+          card_body.className="card-body card_product_1";
+          name_product.className = "card-title card_title_product";
+          new_img.className = "imagesfilter card-img-top p-3 img_card_products";
           new_categorie.className = "label_categorie";
           new_tag.className = "label_tags";
           new_availability.className = "label_availability";
-          new_product.innerHTML = name_product;
+          new_product.innerHTML =nameproduct;
           new_tag.innerHTML = tag;
           new_categorie.innerHTML = categorie;
           new_availability.innerHTML = availability;
           new_img.src = img;
           container_cards.appendChild(new_column);
-          new_column.appendChild(new_card);
-          new_card.appendChild(new_product);
-          new_card.appendChild(new_tag);
-          new_card.appendChild(new_img);
-          new_card.appendChild(new_categorie);
-          new_card.appendChild(new_availability);
+          new_column.appendChild(new_product);
+          new_product.appendChild(card_picture);
+          new_product.appendChild(card_body);  
+          card_picture.appendChild(new_img)
+          card_body.appendChild(name_product);
+          card_body.appendChild(new_tag);
+          card_body.appendChild(new_categorie);
+          card_body.appendChild(new_availability);
           console.log("paginando", name_product, tag, categorie);
-          print(name_product, tag, categorie, availability, img);
+          // print(name_product, tag, categorie, availability, img);
         }
       },
     };
